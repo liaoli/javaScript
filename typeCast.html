@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript 基础 - 隐式转换</title>
+</head>
+<body>
+  <script> 
+    let num = 13 // 数值
+    let num2 = '2' // 字符串
+
+    // 结果为 132
+    // 原因是将数值 num 转换成了字符串，相当于 '13'
+    // 然后 + 将两个字符串拼接到了一起
+    console.log(num + num2)
+
+    // 结果为 11
+    // 原因是将字符串 num2 转换成了数值，相当于 2
+    // 然后数值 13 减去 数值 2
+    console.log(num - num2)
+
+    let a = prompt('请输入一个数字')
+    let b = prompt('请再输入一个数字')
+
+    alert(a + b);
+
+    let t = '12'
+    let f = 8
+
+    // 显式将字符串 12 转换成数值 12
+    t = Number(t)
+
+    // 检测转换后的类型
+    // console.log(typeof t);
+    console.log(t + f) // 结果为 20
+
+    // 并不是所有的值都可以被转成数值类型
+    let str = 'hello'
+    // 将 hello 转成数值是不现实的，当无法转换成
+    // 数值时，得到的结果为 NaN （Not a Number）
+    console.log(Number(str))
+
+  </script>
+</body>
+</html>
