@@ -21,18 +21,18 @@
 </head>
 
 <body>
-  <div class="box active">文字</div>
+  <div class="box">文字</div>
   <script>
     // 通过classList添加
     // 1. 获取元素
     const box = document.querySelector('.box')
     // 2. 修改样式
     // 2.1 追加类 add() 类名不加点，并且是字符串
-    // box.classList.add('active')
+    box.classList.add('active')
     // 2.2 删除类  remove() 类名不加点，并且是字符串
-    // box.classList.remove('box')
+    box.classList.remove('box')
     // 2.3 切换类  toggle()  有还是没有啊， 有就删掉，没有就加上
-    box.classList.toggle('active')
+    // box.classList.toggle('active')
   </script>
 </body>
 
